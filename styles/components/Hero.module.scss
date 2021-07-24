@@ -1,0 +1,63 @@
+//Change / make global
+@import "styles/globals/breakpoints";
+
+.hero {
+  width: 100%;
+  max-width: 100em;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  //Change
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+.left {
+  line-height: 1.5rem;
+}
+
+.name {
+  color: var(--accent);
+  font-size: 3.25rem;
+}
+
+.type-writer {
+  font-weight: 100;
+  font-size: 3.25rem;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.right {
+  position: relative;
+  width: 28em;
+  height: 28em;
+  border: 2px solid var(--accent);
+  border-radius: 20px;
+  display: inline-block;
+
+
+  //Change
+  @include breakpoint(lg) {
+    width: 20em;
+    height: 20em;
+  }
+}
+
+//Change
+.svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -175px;
+  width: 28em;
+
+  path {
+    fill: var(--text);
+  }
+}

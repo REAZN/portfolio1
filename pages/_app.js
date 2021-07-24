@@ -1,7 +1,17 @@
-import '../styles/globals.css'
+import "../styles/style.scss"
+import Head from "next/head";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function App({Component, pageProps}) {
+    return (
+        <div>
+            <Head>
+                <title>REAZN's Portfolio</title>
+                <meta name="description" content=":)"/>
+                <link rel="icon" href="/favicon.ico"/>
+            </Head>
+            <Component {...pageProps} />
+        </div>
+    )
 }
 
-export default MyApp
+export default App
