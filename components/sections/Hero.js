@@ -16,6 +16,7 @@ export default function Hero() {
                         <Typewriter words={typeWriterWords} cursor cursorStyle={"|"} loop delaySpeed={2500}/>
                     </span>
                 </h1>
+                <button className={styles["contact-button"]}>Contact Me</button>
             </div>
             <div className={styles["right"]}>
                 <Signature/>

@@ -18,19 +18,50 @@
 //Left
 .left {
   line-height: 3.5rem;
+  //position: relative;
 }
 
 .name {
-  color: var(--accent);
-  font-size: 3.25rem;
+  color: rgba(var(--accent));
+  font-size: 3.5rem;
 }
 
 .type-writer {
   font-weight: 100;
-  font-size: 3.25rem;
+  font-size: 3.5rem;
 
   span {
     font-weight: 700;
+  }
+}
+
+.left::before {
+  content: "<h1>";
+}
+.type-writer::after {
+  content: "<h1/>";
+  display: block;
+}
+
+.left::before, .type-writer::after {
+  color: var(--text2);
+  font-family: var(--font-cursive);
+  font-size: 1.2rem;
+  margin-left: -0.75em;
+}
+
+.contact-button {
+  padding: 0.8em 1em;
+  border: 2px solid rgba(var(--accent));
+  border-radius: 5px;
+  background: none;
+  color: rgba(var(--accent));
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(var(--accent), 0.1);
   }
 }
 
@@ -39,7 +70,7 @@
   position: relative;
   width: 28em;
   height: 28em;
-  border: 2px solid var(--accent);
+  border: 2px solid rgba(var(--accent));
   border-radius: 20px;
   display: inline-block;
 
