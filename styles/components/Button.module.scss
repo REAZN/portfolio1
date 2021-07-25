@@ -1,0 +1,14 @@
+.button {
+  padding: 0.8em 1em;
+  border: 1px solid rgba(var(--accent));
+  border-radius: 5px;
+  background: none;
+  color: rgba(var(--accent));
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(var(--accent), 0.1);
+  }
+}
