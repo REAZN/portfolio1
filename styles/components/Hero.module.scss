@@ -1,5 +1,4 @@
-//Change / make global
-@import "styles/globals/breakpoints";
+@import "styles/breakpoints";
 
 .hero {
   width: 100%;
@@ -15,8 +14,10 @@
   padding-right: 5em;
 }
 
+
+//Left
 .left {
-  line-height: 1.5rem;
+  line-height: 3.5rem;
 }
 
 .name {
@@ -33,6 +34,7 @@
   }
 }
 
+//Right
 .right {
   position: relative;
   width: 28em;
@@ -41,6 +43,18 @@
   border-radius: 20px;
   display: inline-block;
 
+  svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -175px;
+    width: 28em;
+    height: 17.56em;
+
+    path {
+      fill: var(--text);
+    }
+  }
 
   //Change
   @include breakpoint(lg) {
@@ -49,15 +63,3 @@
   }
 }
 
-//Change
-.svg {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: -175px;
-  width: 28em;
-
-  path {
-    fill: var(--text);
-  }
-}
