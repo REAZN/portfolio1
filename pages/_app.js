@@ -7,7 +7,7 @@ function App({Component, pageProps}) {
             <Head>
                 <title>REAZN's Portfolio</title>
                 <meta name="description" content=":)"/>
-                <link rel="icon" href="/favicon.ico"/>
+                <link rel="icon" href="/favicon.png"/>
             </Head>
             <Component {...pageProps} />
         </div>
