@@ -1,6 +1,6 @@
 import {Typewriter} from "react-simple-typewriter";
-import styles from "../../styles/components/sections/Hero.module.scss";
-import {Signature, Button} from "@components";
+import styles from "styles/components/sections/Hero.module.scss";
+import {Signature, Button} from "components";
 
 export default function Hero() {
 

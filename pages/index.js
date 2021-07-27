@@ -1,4 +1,4 @@
-import {Nav, Hero} from "@components";
+import {Nav, Hero} from "components";
 
 export default function Home() {
   return (

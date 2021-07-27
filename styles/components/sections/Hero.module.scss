@@ -1,4 +1,4 @@
-@import "../../breakpoints";
+@use "../../breakpoints";
 
 .hero {
   width: 100%;
@@ -88,7 +88,7 @@
   }
 
   //Change
-  @include breakpoint(lg) {
+  @include breakpoints.breakpoint(lg) {
     width: 20em;
     height: 20em;
   }
