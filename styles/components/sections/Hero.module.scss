@@ -1,4 +1,4 @@
-@use "../../breakpoints";
+@use "styles/breakpoints";
 
 .hero {
   width: 100%;
@@ -9,26 +9,47 @@
   align-items: center;
   justify-content: space-between;
 
-  //Change
-  padding-left: 5em;
-  padding-right: 5em;
+
+  @include breakpoints.height(sm) {
+    height: auto;
+    padding-top: calc(var(--nav-height) + 1em);
+  }
+
+  @include breakpoints.width(md) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 }
 
 
 //Left
 .left {
-  line-height: 3.5rem;
-  //position: relative;
+  @include breakpoints.height(sm) {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  @include breakpoints.width(md) {
+    width: 100%;
+    margin-top: 4em;
+  }
+
+  @include breakpoints.width(sm) {
+    margin-bottom: -2em;
+    margin-top: 4em;
+  }
 }
 
 .name {
   color: rgba(var(--accent));
-  font-size: 3.5rem;
+  //Make variable
+  font-size: clamp(1.6rem, 4.2vw, 3.5rem);
 }
 
 .type-writer {
+  color: var(--text);
   font-weight: 100;
-  font-size: 3.5rem;
+  font-size: clamp(1.6rem, 4.2vw, 3.5rem);
 
   span {
     font-weight: 700;
@@ -41,6 +62,7 @@
 .type-writer::after {
   content: "<h1/>";
   display: block;
+  padding-bottom: 10px;
 }
 
 .left::before, .type-writer::after {
@@ -50,47 +72,35 @@
   margin-left: -0.75em;
 }
 
-//.contact-button {
-//  padding: 0.8em 1em;
-//  border: 2px solid rgba(var(--accent));
-//  border-radius: 5px;
-//  background: none;
-//  color: rgba(var(--accent));
-//  font-family: var(--font-mono);
-//  font-size: 1.1rem;
-//  cursor: pointer;
-//
-//  &:hover {
-//    background-color: rgba(var(--accent), 0.1);
-//  }
-//}
-
 //Right
 .right {
   position: relative;
-  width: 28em;
-  height: 28em;
+  width: clamp(15rem, 28vw, 28rem);
+  height: clamp(15rem, 28vw, 28rem);
   border: 2px solid rgba(var(--accent));
   border-radius: 20px;
   display: inline-block;
+
+  @include breakpoints.width(sm) {
+    width: 12em;
+    height: 12em;
+  }
 
   svg {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -175px;
-    width: 28em;
-    height: 17.56em;
+    left: -40%;
+    width: clamp(15em, 28vw, 28em);
+
+
+    @include breakpoints.width(sm) {
+      width: 12em;
+    }
 
     path {
       fill: var(--text);
     }
-  }
-
-  //Change
-  @include breakpoints.breakpoint(lg) {
-    width: 20em;
-    height: 20em;
   }
 }
 

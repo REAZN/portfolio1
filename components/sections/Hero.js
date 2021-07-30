@@ -11,7 +11,7 @@ export default function Hero() {
             <div className={styles["left"]}>
                 <h1 className={styles["name"]}>this is reazn</h1>
                 <h1 className={styles["type-writer"]}>
-                    I'M A{" "}
+                    I{"'"}M A{" "}
                     <span>
                         <Typewriter words={typeWriterWords} cursor cursorStyle={"|"} loop delaySpeed={2500}/>
                     </span>

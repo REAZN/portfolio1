@@ -4,8 +4,14 @@ $breakpoints: (
   "lg": "90em", //1440
 );
 
-@mixin breakpoint($size) {
+@mixin width($size) {
   @media (max-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+@mixin height($size) {
+  @media (max-height: map-get($breakpoints, $size)) {
     @content;
   }
 }

@@ -4,7 +4,8 @@
   z-index: 100;
   backdrop-filter: blur(3px);
   transition: 0.4s;
-  height: 6.3em;
+  height: var(--nav-height);
+  //background: blue;
 }
 
 //.nav {

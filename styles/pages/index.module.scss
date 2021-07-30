@@ -1,0 +1,6 @@
+@use "styles/breakpoints";
+
+.padding {
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
