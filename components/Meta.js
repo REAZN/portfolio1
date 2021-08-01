@@ -1,8 +1,9 @@
 import Head from "next/head";
+import config from "/config"
 
 export default function Meta({title, description, image}) {
 
-    image = `http://localhost:3000/${image}`
+    image = `${config.siteUrl}${image}`
 
     return (
         <Head>
@@ -21,7 +22,7 @@ export default function Meta({title, description, image}) {
             <meta property="og:description" content={description}/>
             <meta property="og:image" content={image}/>
 
-            <meta name="twitter:creator" content="@realreazn"/>
+            <meta name="twitter:creator" content={config.twitter}/>
             <meta name="twitter:title" content={title}/>
             <meta name="twitter:description" content={description}/>
             <meta name="twitter:card" content="summary_large_image"/>
