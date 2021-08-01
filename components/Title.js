@@ -9,6 +9,5 @@ export default function Title({text}) {
                 <path d="M87 3H86" stroke="#DA7779" strokeWidth="6" strokeLinecap="round"/>
             </svg>
         </h1>
-
     )
 }

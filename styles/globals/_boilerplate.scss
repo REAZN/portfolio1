@@ -1,3 +1,14 @@
+@use "styles/breakpoints";
+
+:root {
+  --nav-height: 6.3em;
+  --padding: 5em;
+
+  @include breakpoints.width(sm) {
+    --padding: 3em;
+  }
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -5,6 +16,8 @@ html, body {
 
   color: var(--text);
   background: var(--dark-bg);
+
+  font-family: var(--font);
 }
 
 a {
@@ -19,4 +32,9 @@ a {
 h1, h2, h3 {
   margin-top: 0;
   margin-bottom: 0;
+}
+
+p {
+  line-height: 1.6em;
+  margin: 0;
 }
