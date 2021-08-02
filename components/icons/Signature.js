@@ -1,5 +1,5 @@
 
-export default function Signature(fill) {
+export default function Signature({fill}) {
     return (
         <svg viewBox="0 0 169.957 107.092">
             <g id="Layer_2" data-name="Layer 2">
