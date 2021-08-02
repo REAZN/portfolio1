@@ -24,7 +24,10 @@
 }
 
 .left {
-  margin-right: 3em;
+  margin-right: 4em;
+  @include breakpoints.width(md) {
+    margin-right: 0;
+  }
 
   p {
     font-size: 1.1rem;
