@@ -1,6 +1,6 @@
 import styles from "styles/components/sections/About.module.scss";
 import Script from "next/script";
-import {Button, Title, HtmlTag, Sphere} from "components";
+import {Button, Title, HtmlTag, Sphere, Link} from "components";
 
 export default function About() {
 
@@ -18,7 +18,7 @@ export default function About() {
                         consectetur adipisicing elit. Architecto atque ipsa nam natus non numquam quam quisquam.
                     </p>
                     <HtmlTag text="<p/>"/>
-                    <Button text="Curriculum Vitae"/>
+                    <Button text="Curriculum Vitae" icon={<Link fill="var(--accent)"/>} href={"/cv"}/>
                 </div>
                 <div className={styles["right"]}>
                     <Sphere/>
