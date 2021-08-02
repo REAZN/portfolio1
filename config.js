@@ -1,10 +1,8 @@
 module.exports = {
     siteUrl: "http://localhost:3000/",
-    email: "",
+    email: "lewis@reazn.me",
     twitter: "@realreazn",
-    github: "reazn",
-    linkedin: "",
-    codepen: "",
-
-
+    github: "REAZN",
+    linkedin: "lewisthompson-",
+    codepen: "REAZN",
 }
