@@ -1,6 +1,6 @@
 import {Typewriter} from "react-simple-typewriter";
 import styles from "styles/components/sections/Hero.module.scss";
-import {Signature, Button} from "components";
+import {Signature, Button, HtmlTag} from "components";
 
 export default function Hero() {
 
@@ -9,6 +9,7 @@ export default function Hero() {
     return (
         <section className={styles["hero"]}>
             <div className={styles["left"]}>
+                <HtmlTag text={"<h1>"}/>
                 <h1 className={styles["name"]}>this is reazn</h1>
                 <h1 className={styles["type-writer"]}>
                     I{"'"}M A{" "}
@@ -16,11 +17,11 @@ export default function Hero() {
                         <Typewriter words={typeWriterWords} cursor cursorStyle={"|"} loop delaySpeed={2500}/>
                     </span>
                 </h1>
+                <HtmlTag text={"<h1/>"}/>
                 <Button text="Contact Me"/>
-                {/*<button className={styles["contact-button"]}>Contact Me</button>*/}
             </div>
             <div className={styles["right"]}>
-                <Signature/>
+                <Signature fill="var(--text)"/>
             </div>
         </section>
     )

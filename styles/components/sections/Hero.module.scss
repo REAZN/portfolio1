@@ -23,8 +23,6 @@
   }
 }
 
-
-//Left
 .left {
   @include breakpoints.height(sm) {
     margin-top: 2em;
@@ -43,7 +41,7 @@
 }
 
 .name {
-  color: rgba(var(--accent));
+  color: var(--accent);
   //Make variable
   font-size: clamp(1.6rem, 4.2vw, 3.5rem);
 }
@@ -58,28 +56,12 @@
   }
 }
 
-.left::before {
-  content: "<h1>";
-}
-.type-writer::after {
-  content: "<h1/>";
-  display: block;
-  padding-bottom: 10px;
-}
 
-.left::before, .type-writer::after {
-  color: var(--text2);
-  font-family: var(--font-cursive);
-  font-size: 1.2rem;
-  margin-left: -0.75em;
-}
-
-//Right
 .right {
   position: relative;
   width: clamp(15rem, 28vw, 28rem);
   height: clamp(15rem, 28vw, 28rem);
-  border: 2px solid rgba(var(--accent));
+  border: 2px solid var(--accent);
   border-radius: 20px;
   display: inline-block;
 
@@ -98,10 +80,6 @@
 
     @include breakpoints.width(sm) {
       width: 12em;
-    }
-
-    path {
-      fill: var(--text);
     }
   }
 }
