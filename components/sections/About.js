@@ -9,16 +9,19 @@ export default function About() {
             <Script type="text/javascript" src="/tagcanvas.min.js" strategy="beforeInteractive"/>
             <div className={styles["content"]}>
                 <div className={styles["left"]}>
-                    <Title text={"About Me"}/>
-                    <HtmlTag text="<p>"/>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ducimus error facilis
-                        necessitatibus porro tempore? Adipisci dolorem iste modi natus praesentium sed totam.
-                        Consectetur exercitationem iure reprehenderit ullam. Animi, ipsum. Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit. Architecto atque ipsa nam natus non numquam quam quisquam.
-                    </p>
-                    <HtmlTag text="<p/>"/>
-                    <Button text="Curriculum Vitae" icon={<LinkIcon fill="var(--accent)"/>} href={"/cv"}/>
+                    <Title text="About Me"/>
+                    <HtmlTag tag="p">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ducimus error facilis
+                            necessitatibus porro tempore? Adipisci dolorem iste modi natus praesentium sed totam.
+                            Consectetur exercitationem iure reprehenderit ullam. Animi, ipsum. Lorem ipsum dolor sit
+                            amet,
+                            consectetur adipisicing elit. Architecto atque ipsa nam natus non numquam quam quisquam.
+                        </p>
+                    </HtmlTag>
+                    <Button icon={<LinkIcon fill="var(--accent)"/>} href={"/cv"} style={{marginTop: "1em"}}>
+                        Curriculum Vitae
+                    </Button>
                 </div>
                 <div className={styles["right"]}>
                     <Sphere/>

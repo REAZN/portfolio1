@@ -9,16 +9,16 @@ export default function Hero() {
     return (
         <section className={styles["hero"]}>
             <div className={styles["left"]}>
-                <HtmlTag text={"<h1>"}/>
-                <h1 className={styles["name"]}>this is reazn</h1>
-                <h1 className={styles["type-writer"]}>
-                    I{"'"}M A{" "}
-                    <span>
-                        <Typewriter words={typeWriterWords} cursor cursorStyle={"|"} loop delaySpeed={2500}/>
-                    </span>
-                </h1>
-                <HtmlTag text={"<h1/>"}/>
-                <Button text="Contact Me"/>
+                <HtmlTag tag="h1">
+                    <h1 className={styles["name"]}>this is reazn</h1>
+                    <h1 className={styles["type-writer"]}>
+                        I{"'"}M A{" "}
+                        <span>
+                            <Typewriter words={typeWriterWords} cursor cursorStyle={"|"} loop delaySpeed={2500}/>
+                        </span>
+                    </h1>
+                </HtmlTag>
+                <Button style={{marginTop: "1em"}}>Contact Me</Button>
             </div>
             <div className={styles["right"]}>
                 <Signature fill="var(--text)"/>
