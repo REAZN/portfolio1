@@ -9,14 +9,14 @@
 }
 
 .content {
-  padding-left: var(--padding);
-  padding-right: var(--padding);
-  margin: auto;
   max-width: 85em;
   height: 100%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
 
   @include breakpoints.width(md) {
     flex-direction: column;

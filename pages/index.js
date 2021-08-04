@@ -1,4 +1,4 @@
-import {Meta, Nav, Hero, About, Footer} from "components";
+import {Meta, Nav, Hero, About, Experiments, Footer} from "components";
 
 export default function Home() {
     return (
@@ -7,6 +7,7 @@ export default function Home() {
             <Nav/>
             <Hero/>
             <About/>
+            <Experiments/>
             <Footer/>
         </>
     )
