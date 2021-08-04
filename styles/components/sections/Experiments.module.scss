@@ -1,0 +1,34 @@
+@use "styles/breakpoints";
+
+.experiments {
+  width: 100%;
+  background: var(--dark-bg2);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.content {
+  max-width: 85em;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+}
+
+.cards {
+  display: flex;
+  margin-bottom: 2em;
+  justify-content: space-between;
+}
+
+.experiment {
+  width: 100%;
+  height: 30em;
+  background: #3c3c7d;
+}
+
+.image {
+  border-radius: 5px;
+}
