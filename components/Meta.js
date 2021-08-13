@@ -29,7 +29,7 @@ export default function Meta() {
             <meta name="twitter:card" content="summary_large_image"/>
             <meta name="twitter:image" content={image}/>
 
-            <link rel="icon" href="favicons/favicon.png"/>
+            <link rel="icon" href="/favicons/favicon.png"/>
         </Head>
     )
 }
