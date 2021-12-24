@@ -1,7 +1,7 @@
 $breakpoints: (
-  "sm": "40em", //640
-  "md": "64em", //1024
-  "lg": "90em", //1440
+  "sm": "40em", //640px
+  "md": "64em", //1024px
+  "lg": "90em", //1440px
 );
 
 @mixin width($size) {

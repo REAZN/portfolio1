@@ -1,12 +1,14 @@
 import styles from "styles/components/Button.module.scss";
 
-export default function Button({children, icon, href, style}) {
+export default function Button({ children, icon, href, style, onClick }) {
     return (
-        <a href={href} target="_blank" rel="noreferrer" className={styles["button"]} tabIndex="-1">
-            <button style={style}>
-                {children}
-                {icon}
-            </button>
-        </a>
+        <div style={style}>
+            <a className={styles["button"]} href={href} onClick={onClick} target="_blank" rel="noreferrer" tabIndex="-1">
+                <button>
+                    {children}
+                    {icon}
+                </button>
+            </a>
+        </div>
     )
 }

@@ -13,7 +13,7 @@
 
 
   @include breakpoints.height(sm) {
-    height: auto;
+    //height: auto;
     padding-top: calc(var(--nav-height) + 1em);
   }
 
@@ -43,13 +43,15 @@
 .name {
   color: var(--accent);
   //Make variable
-  font-size: clamp(1.6rem, 4.2vw, 3.5rem);
+  font-size: clamp(2rem, 4.2vw, 3.5rem);
 }
 
 .type-writer {
   color: var(--text);
   font-weight: 100;
-  font-size: clamp(1.6rem, 4.2vw, 3.5rem);
+  font-size: clamp(2rem, 4.2vw, 3.5rem);
+  white-space: nowrap;
+  overflow: hidden;
 
   span {
     font-weight: 700;

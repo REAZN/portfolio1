@@ -5,13 +5,14 @@
   }
 
   button {
-    padding: .8em 1em;
-    border: 2px solid var(--accent);
+    height: 100%;
+    padding: .7em 1em;
+    border: 1px solid var(--accent);
     border-radius: 5px;
     background: none;
     color: var(--accent);
     font-family: var(--font-mono);
-    font-size: 1rem;
+    font-size: 0.9rem;
     cursor: pointer;
     display: flex;
     transition: background-color 250ms;

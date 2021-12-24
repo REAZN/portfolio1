@@ -1,11 +1,13 @@
 @use "styles/breakpoints";
 
+//TODO - properly nest all other scss files
+
 .about {
   width: 100%;
   background: var(--dark-bg2);
   padding-top: 5em;
   padding-bottom: 5em;
-  margin-bottom: 300px; //Todo - remove
+  margin-bottom: 300px; //TODO - remove
 }
 
 .content {

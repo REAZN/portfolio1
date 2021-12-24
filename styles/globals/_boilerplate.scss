@@ -3,12 +3,7 @@
 :root {
   --nav-height: 6.3em;
 
-  //Todo - Make a global padding function/file
-  --padding: 5em;
-
-  @include breakpoints.width(sm) {
-    --padding: 3em;
-  }
+  --padding: min(5%, 5rem);
 }
 
 html, body {
