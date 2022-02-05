@@ -1,7 +1,7 @@
 import "styles/style.scss"
-
-export default function App({Component, pageProps}) {
+//tests
+export default function App({ Component, pageProps }) {
     return (
-        <Component {...pageProps}/>
+        <Component {...pageProps} />
     )
 }
