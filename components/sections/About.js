@@ -1,15 +1,15 @@
 import styles from "styles/components/sections/About.module.scss";
 import Script from "next/script";
-import {Button, Title, HtmlTag, Sphere, LinkIcon} from "components";
+import { Button, Title, HtmlTag, Sphere, LinkIcon } from "components";
 
 export default function About() {
 
     return (
         <section className={styles["about"]}>
-            <Script type="text/javascript" src="/tagcanvas.min.js" strategy="beforeInteractive"/>
+            <Script type="text/javascript" src="/tagcanvas.min.js" strategy="beforeInteractive" />
             <div className={styles["content"]}>
                 <div className={styles["left"]}>
-                    <Title text="About Me"/>
+                    <Title text="About Me" />
                     <HtmlTag tag="p">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore ducimus error facilis
@@ -19,12 +19,12 @@ export default function About() {
                             consectetur adipisicing elit. Architecto atque ipsa nam natus non numquam quam quisquam.
                         </p>
                     </HtmlTag>
-                    <Button icon={<LinkIcon fill="var(--accent)"/>} href={"/cv"} style={{marginTop: "1em"}}>
+                    <Button icon={<LinkIcon fill="var(--accent)" />} href={"/cv"} style={{ marginTop: "1em" }}>
                         Curriculum Vitae
                     </Button>
                 </div>
                 <div className={styles["right"]}>
-                    <Sphere/>
+                    <Sphere style={{ width: "100%", height: "100%" }} />
                 </div>
             </div>
         </section>

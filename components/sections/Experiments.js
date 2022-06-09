@@ -12,7 +12,7 @@ export default function Experiments() {
     return (
         <section className={styles["experiments"]}>
             <div className={styles["content"]}>
-                <Title text="Experiments & Open Source" style={{ marginBottom: "1em" }} />
+                <Title text="Experiments & Open Source" style={{ marginBottom: "2em" }} />
 
                 <ul className={styles["cards"]}>
                     {config.experiments.slice(0, showMore ? config.experiments.length : 3)
@@ -22,7 +22,7 @@ export default function Experiments() {
                                     href={experiment.url}
                                     target="_blank"
                                     rel="noreferrer"
-                                    key={experiment.title}>
+                                    key={index}>
                                     <div className={styles["image-container"]}>
                                         <Image className={styles["image"]}
                                             src={`/images/codepen/${experiment.image}`}
@@ -48,7 +48,7 @@ export default function Experiments() {
                 </ul>
 
                 <Button onClick={() => updateShowMore(!showMore)}
-                    style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "2em" }}>
+                    style={{ display: "flex", justifyContent: "center", alignItems: "center", marginTop: "4em" }}>
                     {showMore ? "Show Less" : "Show More"}
                 </Button>
             </div>

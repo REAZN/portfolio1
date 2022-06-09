@@ -4,13 +4,13 @@
   width: 100%;
   max-width: 100em;
   height: 100vh;
+  min-height: 700px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-left: var(--padding);
   padding-right: var(--padding);
-
 
   @include breakpoints.height(sm) {
     //height: auto;
@@ -58,7 +58,6 @@
   }
 }
 
-
 .right {
   position: relative;
   width: clamp(15rem, 28vw, 28rem);
@@ -79,10 +78,8 @@
     left: -40%;
     width: clamp(15em, 28vw, 28em);
 
-
     @include breakpoints.width(sm) {
       width: 12em;
     }
   }
 }
-

@@ -7,7 +7,7 @@
   background: var(--dark-bg2);
   padding-top: 5em;
   padding-bottom: 5em;
-  margin-bottom: 300px; //TODO - remove
+  // margin-bottom: 300px; //TODO - remove
 }
 
 .content {
@@ -16,7 +16,9 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 3em;
+  width: 100%;
+  // justify-content: space-between;
   padding-left: var(--padding);
   padding-right: var(--padding);
 
@@ -26,21 +28,26 @@
 }
 
 .left {
-  margin-right: 4em;
+  flex: 1;
+
   @include breakpoints.width(md) {
     margin-right: 0;
   }
 
   p {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    color: var(--text2);
   }
 }
 
 .right {
-  width: 500px;
-  height: 500px;
+  flex: 1;
+  max-width: 500px;
+  max-height: 500px;
 
   @include breakpoints.width(md) {
+    // width: 100px;
+    // height: 100px;
     margin-top: 5em;
   }
 }
