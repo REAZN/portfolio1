@@ -7,7 +7,7 @@
   padding-bottom: 5em;
 
   .content {
-    max-width: 85em;
+    max-width: 90em;
     height: 100%;
     margin: 0 auto;
     padding-left: var(--padding);
@@ -19,6 +19,7 @@
       list-style-type: none;
       gap: 4em;
       padding: 0;
+      margin-top: 3em;
 
       @include breakpoints.width(md) {
         grid-template-columns: repeat(2, 1fr);

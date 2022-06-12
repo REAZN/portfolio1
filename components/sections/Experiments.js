@@ -1,6 +1,7 @@
 import styles from "styles/components/sections/Experiments.module.scss"
 import { Button, Title } from "components";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import config from "config";
 
 import { useState } from "react";
@@ -10,14 +11,23 @@ export default function Experiments() {
     const [showMore, updateShowMore] = useState(false);
 
     return (
-        <section className={styles["experiments"]}>
+        <section id="section-experiments" className={styles["experiments"]}>
             <div className={styles["content"]}>
-                <Title text="Experiments & Open Source" style={{ marginBottom: "2em" }} />
+                <Title text="Experiments & Open Source" />
 
                 <ul className={styles["cards"]}>
                     {config.experiments.slice(0, showMore ? config.experiments.length : 3)
                         .map((experiment, index) => (
-                            <li key={experiment.title}>
+                            <motion.li key={experiment.title}
+                               initial="hidden"
+                               whileInView="visible"
+                               viewport={{ once: true }}
+                               transition={{ duration: 0.5, delay: index/10}}
+                               variants={{
+                                   visible: { opacity: 1, y: 0 },
+                                   hidden: { opacity: 0, y: "5%" }
+                               }}
+                            >
                                 <a
                                     href={experiment.url}
                                     target="_blank"
@@ -42,7 +52,7 @@ export default function Experiments() {
                                         </div>
                                     </div>
                                 </a>
-                            </li>
+                            </motion.li>
                         ))
                     }
                 </ul>
