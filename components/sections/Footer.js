@@ -5,6 +5,8 @@ import config from "config";
 export default function Footer() {
     return (
         <footer className={styles["footer"]}>
+            <p className={styles["tag"]} style={{bottom: "2em", left: "2em"}}>{"<html>"}</p>
+            <p className={styles["tag"]} style={{bottom: "3em", left: "3em"}}>{"<body>"}</p>
             <Signature fill="var(--text)"/>
             <ul className={styles["social"]}>
                 <li><a href={`https://github.com/${config.social.github}`} target="_blank" rel="noreferrer"><GitHub fill="var(--text)"/></a></li>
