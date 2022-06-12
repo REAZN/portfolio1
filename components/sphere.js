@@ -27,7 +27,7 @@ export default function Sphere({ style }) {
     useEffect(() => {
         try {
             TagCanvas.Start("sphere", "sphere-tags", {
-                maxSpeed: 0.01,
+                maxSpeed: 0.05,
                 wheelZoom: false,
                 freezeActive: true,
                 shuffleTags: true,
