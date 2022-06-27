@@ -1,6 +1,6 @@
 export { default as Meta } from "./Meta";
 export { default as Title } from "./Title";
-export { default as Sphere } from "./sphere";
+export { default as Sphere } from "./Sphere";
 export { default as Button } from "./Button";
 export { default as HtmlTag } from "./HtmlTag";
 
