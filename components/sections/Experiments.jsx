@@ -3,7 +3,6 @@ import { Button, Title } from "components";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import config from "config";
-
 import { useState } from "react";
 
 export default function Experiments() {
