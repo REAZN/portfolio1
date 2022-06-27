@@ -1,5 +1,4 @@
 import styles from "styles/components/sections/About.module.scss";
-import Script from "next/script";
 import { Button, Title, HtmlTag, Sphere, LinkIcon } from "components";
 import { motion } from "framer-motion";
 import config from "config";
@@ -8,7 +7,6 @@ export default function About() {
 
     return (
         <section id="section-about" className={styles["about"]}>
-            <Script type="text/javascript" src="/tagcanvas.min.js" strategy="beforeInteractive" />
             <div className={styles["content"]}>
                 <div className={styles["left"]}>
                     <Title text="About Me" />

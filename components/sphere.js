@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Script from "next/script";
 
 const tech = [
     { name: "CSS", image: "css.png" },
@@ -46,6 +47,7 @@ export default function Sphere({ style }) {
 
     return (
         <>
+            <Script type="text/javascript" src="/tagcanvas.min.js" strategy="beforeInteractive" />
             <canvas id="sphere" style={style} width={500} height={500} />
             <div id="sphere-tags">
                 <ul>
