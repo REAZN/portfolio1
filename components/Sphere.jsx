@@ -54,6 +54,7 @@ export default function Sphere({ style }) {
                     {tech.map(stack => (
                         <li key={stack.name}>
                             <a>
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img src={`/images/sphere/${stack.image}`}
                                     width={60}
                                     height={60}

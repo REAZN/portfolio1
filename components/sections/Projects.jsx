@@ -22,6 +22,7 @@ export default function Projects() {
                            }}
                         >
                             <div className={styles["image-container"]}>
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
                                 <img src={`/images/projects/${project.image}`} alt={"project graphic"} />
                             </div>
                             <div className={styles["info"]}>
