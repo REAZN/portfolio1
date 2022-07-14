@@ -17,13 +17,13 @@ export default function Meta() {
             <meta property="og:title" content={config.seo.title}/>
             <meta property="og:creator" content="REAZN"/>
             <meta property="og:description" content={config.seo.description}/>
-            <meta property="og:image" content={`${config.siteUrl}/images/${config.seo.image}`}/>
+            <meta property="og:image" content={`/images/${config.seo.image}`}/>
 
             <meta name="twitter:title" content={config.seo.title}/>
             <meta name="twitter:creator" content={config.social.twitter}/>
             <meta name="twitter:description" content={config.seo.description}/>
             <meta name="twitter:card" content="summary_large_image"/>
-            <meta name="twitter:image" content={`${config.siteUrl}/images/${config.seo.image}`}/>
+            <meta name="twitter:image" content={`/images/${config.seo.image}`}/>
 
             <link rel="icon" href="/favicons/favicon.png"/>
         </Head>
