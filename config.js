@@ -2,7 +2,7 @@ module.exports = {
     siteUrl: "http://localhost:3000",
     seo: {
         title: "REAZN - Portfolio 1",
-        description: "Personal portfolio of Lewis Thompson, a Front-end web developer and designer.",
+        description: "Personal portfolio of REAZN, a Front-end web developer and designer.",
         image: "og.png",
     },
     social: {
