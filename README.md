@@ -12,12 +12,12 @@ Part of three portfolios developed for a university assignment to evaluate the U
 ## Links
 ### Portfolio 1
 [GitHub](https://github.com/REAZN/portfolio),
-[Demo](https://reazn.me/portfolio1)
+[Demo](https://portfolio1.reazn.me/)
 
 ### Portfolio 2
 [GitHub](https://github.com/REAZN/portfolio2),
-[Demo](https://reazn.me/portfolio2)
+[Demo](https://portfolio2.reazn.me/)
 
 ### Portfolio 3
 [GitHub](https://github.com/REAZN/portfolio3),
-[Demo](https://reazn.me/portfolio3)
+[Demo](https://portfolio3.reazn.me/)
