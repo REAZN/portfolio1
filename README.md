@@ -11,7 +11,7 @@ Part of three portfolios developed for a university assignment to evaluate the U
 
 ## Links
 ### Portfolio 1
-[GitHub](https://github.com/REAZN/portfolio),
+[GitHub](https://github.com/REAZN/portfolio1),
 [Demo](https://portfolio1.reazn.me/)
 
 ### Portfolio 2
